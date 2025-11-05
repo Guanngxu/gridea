@@ -60,7 +60,7 @@ const router = new Router({
   ],
 })
 
-router.afterEach((to, from) => {
+router.afterEach((to: any, from: any) => {
   ga.pageView(to.fullPath, to.name)
 })
 
